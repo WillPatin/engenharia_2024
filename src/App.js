@@ -1,18 +1,14 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import './css/App.css';
+import Cadastro from "./view/Cadastro";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Vamos fazer react.
-        </p>
-        
-         
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Routes>
+    </Router>
   );
 }
 
