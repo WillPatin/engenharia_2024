@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
+import Button from "../components/button";
 import InputField from "../components/InputField";
 import styles from "./Cadastro.module.css";
 import logo from "../images/Logo_Pacato_cidadão.png";
+import { Link } from "react-router-dom";
 
 const Cadastro = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +14,7 @@ const Cadastro = () => {
     console.log("Cadastro realizado com sucesso!");
     console.log("Nome:", nome);
     console.log("Email:", email);
-    console.log("Senha:", senha); // Apenas para teste, evite imprimir senhas em produção!
+    console.log("Senha:", senha);
   };
 
   return (
@@ -44,7 +45,9 @@ const Cadastro = () => {
           <Button label="Cadastrar" onClick={handleCadastro} />
         </div>
       </div>
-      <h2>Já possui cadastro? Faça o login.</h2>
+      <div className={styles.linkLogin}>
+        Já possui cadastro? <Link to="/login">Faça o login</Link>
+      </div>
     </div>
   );
 };
