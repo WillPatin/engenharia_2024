@@ -1,9 +1,10 @@
-/* Button.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
 
 .button {
+  font-family: 'Kanit', kanit;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;

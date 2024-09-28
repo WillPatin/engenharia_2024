@@ -1,6 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
 
 .cadastroContainer {
+    font-family: 'Kanit', Kanit;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,14 +12,17 @@
   }
   
   .cadastroForm {
-    background-color: white;
+    background-color: #40759b;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -100px;
+    
   }
   
   .cadastroTitle {
@@ -25,10 +30,18 @@
     font-size: 24px;
     color: #333;
   }
+  
   .buttonContainer {
     display: flex;
     justify-content: center; /* Centraliza o botão horizontalmente */
     width: 100%;
     margin-top: 20px;
+  }
+  
+  .logo {
+    margin-bottom: 20px; /* Espaço entre o logo e o título */
+    margin-top: -50px; /* Se quiser trazer o logo mais perto do container */
+    width: 250px;
+    height: 230px;
   }
   

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
+
+.inputField {
+    font-family: 'Kanit',kanit;
+    width: 300px; /* Adjusts the width of the input field */
+    padding: 10px; /* Adds padding inside the input field */
+    border-radius: 5px; /* Rounds the corners */
+    border: 1px solid #ccc; /* Adds a border */
+    font-size: 16px; /* Sets the font size */
+    outline: none; /* Removes the default outline when the field is focused */
+    margin-bottom: 20px; /* Adds spacing between the input fields */
+    transition: border-color 0.3s ease-in-out; /* Adds a smooth transition when the border color changes */
+}

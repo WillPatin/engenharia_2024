@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../components/Button";
 import InputField from "../components/InputField";
 import styles from "./Cadastro.module.css";
+import logo from "../images/Logo_Pacato_cidadão.png";
 
 const Cadastro = () => {
   const [email, setEmail] = useState("");
@@ -17,10 +18,9 @@ const Cadastro = () => {
 
   return (
     <div className={styles.cadastroContainer}>
-      <h1>Pacato Cidadão</h1>
-      <div className={styles.cadastroForm}>
-        <h2>Cadastro</h2>
+      <img src={logo} alt="Logo Pacato cidadão" className={styles.logo}></img>
 
+      <div className={styles.cadastroForm}>
         <InputField
           label="Nome: "
           type="text"
@@ -44,6 +44,7 @@ const Cadastro = () => {
           <Button label="Cadastrar" onClick={handleCadastro} />
         </div>
       </div>
+      <h2>Já possui cadastro? Faça o login.</h2>
     </div>
   );
 };
