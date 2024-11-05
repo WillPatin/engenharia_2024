@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../components/button";
 import InputField from "../components/InputField";
 import styles from "./Cadastro.module.css";
-import logo from "../images/Logo_Pacato_cidadão.png";
+import logo from "../images/Logo_pacato_verde.png";
 import { Link } from "react-router-dom";
 
 const Cadastro = () => {

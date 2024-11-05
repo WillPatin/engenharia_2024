@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap');
 
 .cadastroContainer {
@@ -13,11 +12,11 @@
   }
   
   .cadastroForm {
-    background-color: #40759b;
+    background-color: #99d4c4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: rgb(0, 0, 0);
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
   }
   
   .logo {
-    margin-bottom: 20px; /* Espaço entre o logo e o título */
+    margin-bottom: 50px; /* Espaço entre o logo e o título */
     margin-top: -50px; /* Se quiser trazer o logo mais perto do container */
     width: 250px;
     height: 230px;
