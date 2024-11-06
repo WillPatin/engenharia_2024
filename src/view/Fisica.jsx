@@ -14,14 +14,13 @@ import {
   FaHeart,
 } from "react-icons/fa";
 
-const Home = () => {
+const Fisica = () => {
   const handleClick = (servico) => {
     console.log("Voce apertou no botão");
   };
   return (
     <div className={styles.homeContainer}>
       <img src={logo} alt="Logo Pacato cidadão" className={styles.logo}></img>
-
       <div className={styles.iconContainer}>
         <Link to="/fisica">
           <button className={styles.iconButton} onClick={() => handleClick()}>
@@ -31,29 +30,17 @@ const Home = () => {
           </button>
         </Link>
 
-        <Link to="/esporte">
-          <button className={styles.iconButton} onClick={() => handleClick()}>
-            <div className={styles.iconHome}>
-              <FaFutbol size={40} />
-            </div>
-          </button>
-        </Link>
+        <button className={styles.iconButton} onClick={() => handleClick()}>
+          <div className={styles.iconHome}>
+            <FaFutbol size={40} />
+          </div>
+        </button>
 
-        <Link to="saude">
-          <button className={styles.iconButton} onClick={() => handleClick()}>
-            <div className={styles.iconHome}>
-              <FaHospital size={40} />{" "}
-            </div>
-          </button>
-        </Link>
-
-        <Link to="educacao">
-          <button className={styles.iconButton} onClick={() => handleClick()}>
-            <div className={styles.iconHome}>
-              <FaBook size={40} />{" "}
-            </div>
-          </button>
-        </Link>
+        <button className={styles.iconButton} onClick={() => handleClick()}>
+          <div className={styles.iconHome}>
+            <FaBook size={40} />{" "}
+          </div>
+        </button>
 
         <button className={styles.iconButton} onClick={() => handleClick()}>
           <div className={styles.iconHome}>
@@ -84,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Fisica;
