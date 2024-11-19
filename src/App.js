@@ -4,6 +4,7 @@ import Cadastro from "./view/Cadastro";
 import Login from "./view/Login";
 import Home from "./view/Home";
 import Fisica from "./view/Fisica";
+import Esporte from "./view/Esporte";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/fisica" element={<Fisica />} />
+        <Route path="/esporte" element={<Esporte />} />
       </Routes>
     </Router>
   );

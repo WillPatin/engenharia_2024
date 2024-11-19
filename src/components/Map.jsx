@@ -6,19 +6,17 @@ const containerStyle = {
   height: "400px",
 };
 
-const center = {
-  lat: -23.55052,
-  lng: -46.633308,
-};
+const defaultLocation = { lat: -23.55052, lng: -46.633308 };
 
-// Substitua 'YOUR_GOOGLE_MAPS_API_KEY' pela sua chave de API
-const googleMapsApiKey = "AIzaSyCzKn8kSaCDisK5BYVTIRCBL9ht-rJ1ORM";
+const Map = ({ location }) => {
+  const googleMapsApiKey = "AIzaSyCzKn8kSaCDisK5BYVTIRCBL9ht-rJ1ORM";
 
-const Map = () => {
+  const center = location || defaultLocation;
+
   return (
     <LoadScript googleMapsApiKey={googleMapsApiKey}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-        <Marker position={center} />
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
+        {location && <Marker position={location} />}
       </GoogleMap>
     </LoadScript>
   );

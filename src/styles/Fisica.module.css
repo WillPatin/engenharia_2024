@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+
+.fisicaContainer {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.logo {
+  margin-bottom: 50px;
+  margin-top: -50px;
+  width: 250px;
+  height: 230px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #5a7690;
+  margin-bottom: 30px;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.atividadesList {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.atividadeCard {
+  background-color: #99d4c4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: black;
+}
+
+.atividadeCard h2 {
+  margin: 0 0 10px;
+}
+
+.atividadeCard p {
+  margin: 0;
+  font-size: 14px;
+}
+.atividadeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.atividadeCard:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.atividadeCard h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.atividadeCard p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
