@@ -46,7 +46,7 @@ const Cadastro = () => {
         </div>
       </div>
       <div className={styles.linkLogin}>
-        Já possui cadastro? <Link to="/login">Faça o login</Link>
+        Já possui cadastro? <Link to="/">Faça o login</Link>
       </div>
     </div>
   );

@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-import Map from "../components/Map"; // Certifique-se que o caminho está correto
-import styles from "../styles/Fisica.module.css";
+import Map from "../components/Map";
+import styles from "../styles/Views.module.css";
 import logo from "../images/Logo_pacato_verde.png";
-
+import { Link } from "react-router-dom";
 const atividades = [
   {
     titulo: "Ginástica para idosos",
     descricao: "Todas as Segundas & Quartas-feiras das 8:30 às 11:30",
-    coordenadas: { lat: -23.5475, lng: -46.6361 },
+    coordenadas: { lat: -29.780309711945367, lng: -51.14386280674634 },
   },
   {
     titulo: "Pilates",
     descricao: "Quartas-Feiras das 13h às 17h",
+    coordenadas: { lat: -29.759658191304275, lng: -51.14490539565468 },
   },
   {
     titulo: "Ritmos",
     descricao: "Terças-Feiras das 13h às 17h",
+    coordenadas: { lat: -29.780309711945367, lng: -51.14386280674634 },
   },
 ];
 
@@ -27,8 +29,9 @@ const Fisica = () => {
   };
   return (
     <div className={styles.fisicaContainer}>
-      <img src={logo} alt="Logo Bem-Estar Cidadão" className={styles.logo} />
-
+      <Link to="/home">
+        <img src={logo} alt="Logo Bem-Estar Cidadão" className={styles.logo} />
+      </Link>
       <div className={styles.atividadesList}>
         {atividades.map((atividade, index) => (
           <div
