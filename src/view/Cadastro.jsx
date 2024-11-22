@@ -42,7 +42,9 @@ const Cadastro = () => {
         />
 
         <div className={styles.buttonContainer}>
-          <Button label="Cadastrar" onClick={handleCadastro} />
+          <Link to="/">
+            <Button label="Cadastrar" onClick={handleCadastro} />
+          </Link>
         </div>
       </div>
       <div className={styles.linkLogin}>

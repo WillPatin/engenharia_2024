@@ -6,7 +6,7 @@ const containerStyle = {
   height: "400px",
 };
 
-const defaultLocation = { lat: -23.55052, lng: -46.633308 };
+const defaultLocation = { lat: -29.76028973668929, lng: -51.15069201332265 };
 
 const Map = ({ location }) => {
   const googleMapsApiKey = "AIzaSyCzKn8kSaCDisK5BYVTIRCBL9ht-rJ1ORM";
