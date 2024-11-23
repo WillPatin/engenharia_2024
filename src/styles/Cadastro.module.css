@@ -30,14 +30,14 @@
   
   .buttonContainer {
     display: flex;
-    justify-content: center; /* Centraliza o botão horizontalmente */
+    justify-content: center; 
     width: 100%;
     margin-top: 0px;
   }
   
   .logo {
-    margin-bottom: 50px; /* Espaço entre o logo e o título */
-    margin-top: -50px; /* Se quiser trazer o logo mais perto do container */
+    margin-bottom: 50px; 
+    margin-top: -50px; 
     width: 250px;
     height: 230px;
   }
@@ -56,5 +56,40 @@
   .linkLogin a:hover{
     
     text-decoration: underline;
+  }
+
+  .criteriosSenha {
+    margin-top: -25px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .valido {
+    color: #0e2f0f; 
+  }
+  
+  .invalido {
+    color: red; 
+  }
+  
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    animation: fadeInOut 3s forwards;
+  }
+
+  .popupSuccess {
+    background-color: #4caf50;
+  }
+  
+  .popupError {
+    background-color: red;
   }
   

@@ -13,6 +13,8 @@ const Home = () => {
     <div className={styles.homeContainer}>
       <img src={logo} alt="Logo Pacato cidadão" className={styles.logo} />
 
+      <h2 className={styles.subTitle}>São Leopoldo</h2>
+
       <div className={styles.iconContainer}>
         <Link to="/fisica">
           <button

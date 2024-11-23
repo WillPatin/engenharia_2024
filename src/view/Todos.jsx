@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Map from "../components/Map";
-import styles from "../styles/Views.module.css";
+import styles from "../styles/Todos.module.css";
 import logo from "../images/Logo_pacato_verde.png";
 import { Link } from "react-router-dom";
 
@@ -53,18 +53,32 @@ const atividades = [
 ];
 
 const Todos = () => {
+  const [pesquisa, setPesquisa] = useState("");
   const [selectLocation, setSelectLocation] = useState(null);
 
   const handleAtividadeClick = (coordenadas) => {
     setSelectLocation(coordenadas);
   };
+
+  const filteredAtividades = atividades.filter((atividade) =>
+    atividade.titulo.toLowerCase().includes(pesquisa.toLowerCase())
+  );
   return (
     <div className={styles.fisicaContainer}>
       <Link to="/home">
         <img src={logo} alt="Logo Bem-Estar Cidadão" className={styles.logo} />
       </Link>
+      <div className={styles.searchContainer}>
+        <input
+          type="text"
+          placeholder="Pesquisar atividades..."
+          className={styles.searchBar}
+          value={pesquisa}
+          onChange={(e) => setPesquisa(e.target.value)}
+        />
+      </div>
       <div className={styles.atividadesList}>
-        {atividades.map((atividade, index) => (
+        {filteredAtividades.map((atividade, index) => (
           <div
             key={index}
             className={styles.atividadeCard}
