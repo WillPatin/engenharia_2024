@@ -30,7 +30,7 @@ const Fisica = () => {
   return (
     <div className={styles.fisicaContainer}>
       <Link to="/home">
-        <img src={logo} alt="Logo Bem-Estar Cidadão" className={styles.logo} />
+        <img src={logo} alt="Logo Pacato Cidadão" className={styles.logo} />
       </Link>
       <div className={styles.atividadesList}>
         {atividades.map((atividade, index) => (
